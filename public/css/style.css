@@ -160,12 +160,12 @@ button {
 }
 
 /* RDV buttons */
-.btnstyle-rdv {
+.btnstyle-copy {
   margin: 15px;
   width: 200px;
   border-radius: 100px;
   background: #293D7C;
-  color: black;
+  color: #fff;
   padding: 5px 10px;
   border-style: hidden;
   cursor: pointer;
@@ -173,13 +173,13 @@ button {
   position: relative;
   z-index: 1;
 }
-.btnstyle-rdv:hover {
+.btnstyle-copy:hover {
   box-shadow: -6px 6px 6px 0px rgba(0, 0, 0, 0.247);
 }
-.btnstyle-rdv:hover .btn-hover {
+.btnstyle-copy:hover .btn-hover {
   opacity: 1;
 }
-.btnstyle-rdv .btn-hover {
+.btnstyle-copy .btn-hover {
   position: absolute;
   top: 0;
   right: 0;
@@ -480,6 +480,13 @@ li {
     text-align: center;
   }
 
+  .tutorial {
+    padding: 70px;
+  }
+  .tutorial h2 {
+    margin-bottom: 40px;
+  }
+
   .first {
     background-size: cover;
     background-repeat: no-repeat;
@@ -512,7 +519,7 @@ li {
     flex-direction: row-reverse;
   }
 }
-.join-us-page h1 {
+.activities-page h1 {
   margin: 30px;
 }
 
