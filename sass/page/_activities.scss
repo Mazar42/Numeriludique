@@ -2,6 +2,12 @@
     h1{
         margin: 30px;
     }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .join-us{

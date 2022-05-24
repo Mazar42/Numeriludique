@@ -11,7 +11,7 @@ $primary-color: #293D7C;
 $secondary-color : #87caf7;
 $tertiary-color: #C3DDF4;
 $footer-bgc: #242626;
-$header-color: rgba(255, 255, 255, 0.699);
+$header-color: rgb(255, 255, 255);
 
 $lightened-tertiary: lighten($tertiary-color, 5%);
 $lightened-secondary: lighten($secondary-color, 5%);

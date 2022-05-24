@@ -37,10 +37,8 @@
         
         if (burgerButton.classList.contains('cancel-bar')) {
             burgerButton.classList.remove('cancel-bar');
-            console.log('off');
         } else {
             burgerButton.classList.add('cancel-bar');
-            console.log('on');
         }
 
     }
@@ -52,6 +50,36 @@
 
     burgerButton.addEventListener("click", () => {
         displayNav();
-        console.log('clicked')
     });
+
+// Copy text for Z-type
+
+// create array with all 'copy buttons'
+
+let copyTextButtons = document.getElementsByClassName('btnstyle-copy');
+
+// Explore array and extract text from previous sibling element for each button
+
+for (const copyButton of copyTextButtons){
+    let contentToCopy = copyButton.previousElementSibling.innerHTML;
+    console.log(contentToCopy);
+
+    // Copy said text 
+
+    const copyText = () => {
+    navigator.clipboard.writeText(contentToCopy);
+}
+
+    // call above function when a button is clicked
+    copyButton.addEventListener("click", () => {
+        copyText();
+
+        //notify user with a friendly pop up
+        alert('Texte copié 😉')
+    })
+}
+
+
+
+
 
